@@ -42,5 +42,29 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/igry`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/igry/musordrop`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    ...['privacy', 'delete-account'].map((doc) => ({
+      url: `${baseUrl}/igry/musordrop/${doc}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    })),
+    {
+      url: `${baseUrl}/igry/stardrop/privacy`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    },
   ]
 }

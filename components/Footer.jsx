@@ -279,6 +279,7 @@ export default function Footer() {
           <div className={styles.legalInfo}>
             <p className={styles.copy}>ИП Скворцов М.А. ИНН 581304172576</p>
             <Link href="/privacy" className={styles.copy} style={{ textDecoration: 'underline' }}>Политика конфиденциальности</Link>
+            <Link href="/igry" className={styles.copy} style={{ textDecoration: 'underline' }}>Наши игры</Link>
             <button onClick={toggleTheme} className={styles.themeToggleBtn}>
               {mounted && theme === 'dark' ? '☀ Светлая тема' : '🌙 Темная тема'}
             </button>

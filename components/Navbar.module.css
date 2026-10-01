@@ -73,13 +73,39 @@
   font-size: 13px;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gamesMobile {
+  display: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 100px;
+  transition: var(--transition);
+}
+
+.gamesMobile:hover {
+  color: var(--text-primary);
+  background: rgba(var(--fg-rgb), 0.07);
+}
+
+/* Ряд из пяти ссылок стоит по центру и уже на ~900px наезжает на логотип
+   слева — поэтому компактная шапка включается раньше, чем остальная
+   мобильная вёрстка. */
+@media (max-width: 920px) {
+  .nav { display: none; }
+  .gamesMobile { display: inline-flex; }
+}
+
 @media (max-width: 768px) {
   .header {
     width: calc(100% - 32px);
     top: 12px;
-  }
-  .nav {
-    display: none;
   }
   .logo { font-size: 19px; }
   .logoFull { display: none; }

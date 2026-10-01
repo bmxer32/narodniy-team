@@ -28,10 +28,37 @@ app/
 │   ├── razrabotka-saytov/               # Услуга: сайты и веб-приложения
 │   ├── razrabotka-mobilnyh-prilozheniy/ # Услуга: мобильные приложения
 │   └── razrabotka-programm-na-pk/       # Услуга: десктоп-софт
-├── privacy/               # Политика конфиденциальности
+├── privacy/               # Политика конфиденциальности сайта
+├── igry/                  # Наши игры: каталог и страницы игр
+│   ├── games.js           # Список игр — правится здесь
+│   └── musordrop/         # MusorDrop: страница игры, политика, удаление аккаунта
 ├── robots.js / sitemap.js # SEO
 components/                # Hero, Portfolio, Skills, Workflow, кастомный курсор и др.
+content/musordrop/         # Текст политики MusorDrop — собирается в репозитории игры
+scripts/dir-index.mjs      # После сборки: страницы-разделы копией в index.html
 ```
+
+### Раздел «Игры» и вход через Google
+
+`/igry/musordrop` — главная страница приложения MusorDrop, а
+`/igry/musordrop/privacy` — его политика конфиденциальности. Оба адреса
+указаны в брендинге экрана входа Google (Google Cloud → Google Auth
+Platform → Branding) проекта `musordrop-app`. Google требует, чтобы они
+лежали на домене, которым владеет разработчик: адрес на github.io
+принадлежит GitHub и проверку не проходит. Переименовать или убрать эти
+страницы — значит провалить проверку бренда: Google покажет игрокам при
+входе, что приложение не проверено, и заморозит настройки проекта.
+
+Текст политики и страницы удаления руками здесь **не правится**. Он
+собирается в репозитории игры (`musordrop`):
+
+```bash
+python tools/build_privacy.py         # в репозитории musordrop
+cp docs/site/*.html ../narodniy-team/content/musordrop/
+```
+
+Первоисточник — `PRIVACY.md` игры. Из него же собирается копия на GitHub
+Pages, и две копии совпадают до буквы.
 
 ### Услуга «Telegram-боты и ИИ» — отдельный проект
 
