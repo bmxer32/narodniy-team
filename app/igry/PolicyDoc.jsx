@@ -22,6 +22,7 @@ const PAGES = {
 const GAMES = {
   musordrop: { name: 'MusorDrop', home: '/igry/musordrop', pages: ['privacy', 'delete-account'] },
   stardrop: { name: 'StarDrop', home: null, pages: ['privacy'] },
+  jabkadrop: { name: 'Jabka Drop', home: null, pages: ['privacy'] },
 }
 
 export default function PolicyDoc({ game = 'musordrop', page }) {
