@@ -1,16 +1,16 @@
 import PolicyDoc from '../../PolicyDoc'
 
-/* Политика конфиденциальности StarDrop — её адрес указан в карточке
-   Google Play. Текст собирается в репозитории игры (tools/build_privacy.py
-   из PRIVACY.md) и кладётся в content/stardrop/. */
+/* Прежний адрес политики RubUp — игра называлась StarDrop, и этот адрес
+   указан в карточке Google Play. Показывает тот же документ, что
+   /igry/rubup/privacy; канонический адрес — новый. */
 
 export const metadata = {
-  title: 'Политика конфиденциальности StarDrop | Narodniy Team',
+  title: 'Политика конфиденциальности RubUp | Narodniy Team',
   description:
-    'Какие данные собирает игра StarDrop: прогресс остаётся на устройстве, наружу уходят только данные для показа рекламы сетью Яндекса и её партнёрами.',
-  alternates: { canonical: '/igry/stardrop/privacy' },
+    'Какие данные собирает игра RubUp (бывший StarDrop): прогресс остаётся на устройстве, наружу уходят только данные для показа рекламы сетью Яндекса и её партнёрами.',
+  alternates: { canonical: '/igry/rubup/privacy' },
 }
 
 export default function Page() {
-  return <PolicyDoc game="stardrop" page="privacy" />
+  return <PolicyDoc game="rubup" page="privacy" />
 }

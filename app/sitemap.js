@@ -61,7 +61,7 @@ export default function sitemap() {
       priority: 0.4,
     })),
     {
-      url: `${baseUrl}/igry/stardrop/privacy`,
+      url: `${baseUrl}/igry/rubup/privacy`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.4,

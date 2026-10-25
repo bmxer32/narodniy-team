@@ -17,11 +17,11 @@ const PAGES = {
   'delete-account': { file: 'delete-account.html', crumb: 'Удаление аккаунта' },
 }
 
-/* `home` — своя страница игры, если она есть. У StarDrop её пока нет:
+/* `home` — своя страница игры, если она есть. У RubUp её пока нет:
    игра ещё не в Play, и ссылка из каталога вела бы в никуда. */
 const GAMES = {
   musordrop: { name: 'MusorDrop', home: '/igry/musordrop', pages: ['privacy', 'delete-account'] },
-  stardrop: { name: 'StarDrop', home: null, pages: ['privacy'] },
+  rubup: { name: 'RubUp', home: null, pages: ['privacy'] },
   jabkadrop: { name: 'Jabka Drop', home: null, pages: ['privacy'] },
 }
 

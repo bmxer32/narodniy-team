@@ -5,7 +5,7 @@ import { DEVELOPER_PLAY, GAMES, play, rustore } from './games'
 const PATH = '/igry'
 const TITLE = 'Игры Narodniy Team — стратегия и симуляторы кейсов для Android'
 const DESCRIPTION =
-  'Century Front — стратегия в реальном времени о веке войны. MusorDrop, StarDrop, Кейсер, Upgrader, RustGrade и StandDrop — бесплатные симуляторы открытия кейсов и апгрейда скинов на игровой валюте, без пополнения и вывода.'
+  'Century Front — стратегия в реальном времени о веке войны. MusorDrop, RubUp, Кейсер, Upgrader, RustGrade и StandDrop — бесплатные симуляторы открытия кейсов и апгрейда скинов на игровой валюте, без пополнения и вывода.'
 
 export const metadata = {
   title: TITLE,

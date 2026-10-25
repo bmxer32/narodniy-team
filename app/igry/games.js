@@ -53,13 +53,13 @@ export const GAMES = [
     privacy: '/igry/musordrop/privacy',
   },
   {
-    slug: 'stardrop',
-    name: 'StarDrop',
-    storeName: 'StarDrop: симулятор кейсов',
+    slug: 'rubup',
+    name: 'RubUp',
+    storeName: 'RubUp: симулятор кейсов',
     pkg: 'com.stardrop.cases',
     about:
       'Симулятор открытия кейсов с анимированными коллекционными подарками: тридцать девять кейсов, апгрейд, ракета, плинко и монетка. Всё на игровых звёздах.',
-    privacy: '/igry/stardrop/privacy',
+    privacy: '/igry/rubup/privacy',
     soon: true,
   },
   {

@@ -1,0 +1,61 @@
+<!--
+  Собрано tools/build_privacy.py из PRIVACY.md (репозиторий stardrop).
+  Руками не править: правка исчезнет при следующей сборке.
+-->
+<h1>Политика конфиденциальности RubUp</h1>
+<p class="meta"><strong>Дата вступления в силу: 26 октября 2026 года.</strong><br>Приложение: RubUp — симулятор кейсов для Android (пакет <code>com.stardrop.cases</code>;<br>до 26 октября 2026 года называлось StarDrop).<br>Разработчик: Narodniy Team, <a href="mailto:narodniy.team@gmail.com">narodniy.team@gmail.com</a>.</p>
+<p>В RubUp нет аккаунтов, входа и своего сервера. Весь игровой прогресс хранится только на вашем устройстве. Наружу данные уходят в одном случае — когда рекламная сеть показывает рекламу.</p>
+<h2>Главное в двух абзацах</h2>
+<div class="lead"><p>Всё внутри игры — звёзды, подарки, баланс, инвентарь, история — вымышленное и не имеет ценности за пределами приложения. Реальные деньги не принимаются, не выплачиваются и не выигрываются. Игровые звёзды и подарки нельзя купить за деньги, продать, вывести или обменять на что-либо за пределами игры. Покупок в приложении нет.</p>
+<p>Устройство покидают только данные, которые собирают рекламная сеть Яндекса и её партнёры, чтобы показать рекламу. Игровой прогресс никуда не отправляется: аккаунта, облака и онлайна в игре нет, связать игру с вами мы не можем.</p></div>
+<h2>Что хранится на устройстве</h2>
+<p>В локальном хранилище приложения лежат:</p>
+<ul><li>баланс звёзд, инвентарь подарков и лучший выпавший подарок;</li><li>статистика игр, достижения, уровень, задания дня и серия входов;</li><li>история последних операций: открытые кейсы, ставки, продажи, награды;</li><li>настройки: язык, звук, вибрация, порядок сортировки инвентаря;</li><li>время последнего бесплатного кейса, кейса-сюрприза, звёздного часа и колеса фортуны, а также отметка времени против перевода часов назад;</li><li>служебные отметки: число запусков (от него зависит, когда показать межстраничную рекламу), заряд удачи по кейсам и режимам, последняя увиденная версия игры (для окна «Что нового»).</li></ul>
+<p>Эти данные не покидают устройство и удаляются при удалении приложения или очистке его данных. Если в вашем аккаунте Google включено резервное копирование Android, система может сохранить копию данных приложения в вашем Google Диске и вернуть её при переустановке; эту копию создаёт и хранит Google, у разработчика доступа к ней нет.</p>
+<h2>Реклама</h2>
+<p>В приложении показывается реклама:</p>
+<ul><li>ролик с вознаграждением — перед бесплатным кейсом и кейсом-сюрпризом, только когда вы сами нажимаете «Открыть»;</li><li>межстраничная реклама — не чаще двух раз за запуск игры, в паузе между вскрытиями кейсов и прокрутами апгрейда.</li></ul>
+<p>Показ организует Рекламная сеть Яндекса (РСЯ) с медиацией: реклама может прийти как от самого Яндекса, так и от его партнёров — Google AdMob, AppLovin, Unity Ads, ironSource (LevelPlay), Mintegral, Pangle, Liftoff (Vungle), InMobi, VK Реклама (myTarget, вместе с сервисом измерения MyTracker), Chartboost, Digital Turbine, Bigo Ads, Start.io, zMaticoo.</p>
+<p>Для показа рекламы эти SDK собирают данные самостоятельно, в том числе:</p>
+<ul><li>рекламный идентификатор устройства (Google Advertising ID) и другие идентификаторы приложения и устройства (например, App Set ID);</li><li>технические сведения об устройстве и приложении, данные о работе SDK;</li><li>сведения о показах рекламы и нажатиях на неё;</li><li>IP-адрес и определённый по нему примерный регион.</li></ul>
+<p>Цели — показ рекламы, её измерение и защита от мошенничества. Точное местоположение приложение не запрашивает: разрешений на геолокацию у него нет вовсе.</p>
+<p>Каждая сеть обрабатывает эти данные как самостоятельный оператор, по своей политике. Политика Яндекса: <a href="https://yandex.ru/legal/confidential/">https://yandex.ru/legal/confidential/</a>, Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; политики остальных партнёров опубликованы на их сайтах. Разработчик приложения доступа к этим данным не имеет. Игровой прогресс рекламным сетям не передаётся.</p>
+<p>Сбросить рекламный идентификатор или запретить персонализацию рекламы можно в настройках Android: «Google» → «Реклама» (или «Конфиденциальность» → «Реклама»).</p>
+<h2>Подарки</h2>
+<p>Названия, картинки и анимации подарков зашиты в само приложение при сборке: во время игры за ними в сеть приложение не ходит. Данные подарков взяты из открытого справочника @GiftChanges (api.changes.tg).</p>
+<h2>Обновления</h2>
+<p>Наличие новой версии проверяет установленное на телефоне приложение Google Play по правилам Google; разработчик при этом данных не получает. Других ссылок наружу и встроенного браузера в игре нет.</p>
+<h2>Разрешения</h2>
+<p>Само приложение просит:</p>
+<ul><li><strong>Интернет</strong> — только для рекламы;</li><li><strong>Состояние сети</strong> — чтобы понимать, стоит ли вообще пытаться загрузить рекламу.</li></ul>
+<p>Рекламные SDK и библиотеки добавляют свои: доступ к рекламному идентификатору (<code>AD_ID</code>) и к рекламным сервисам Android (атрибуция и темы), сведения об источнике установки, о состоянии Wi-Fi и базовом состоянии телефона (тип сети — не номер и не звонки), проверку лицензии Google Play, а также служебные — вибрация, фоновые задачи. Что именно собирает реклама, описано выше, в разделе «Реклама».</p>
+<p>Ни камеры, ни микрофона, ни контактов, ни местоположения, ни доступа к файлам, ни номера телефона приложение не запрашивает. Сама игра работает без интернета.</p>
+<h2>Возрастное ограничение</h2>
+<p>Приложение предназначено для лиц <strong>от 18 лет</strong>. В нём есть имитация азартных игр на игровую валюту: кейсы, апгрейд, ракета, плинко и монетка со случайным исходом. Реальных ставок и выплат в игре нет, но механика воспроизводит азартную, и мы это заявляем прямо — в том числе в анкете возрастного рейтинга Google Play.</p>
+<p>Приложение не предназначено для детей и не участвует в программе Google Play для семей.</p>
+<h2>Ваши права</h2>
+<ul><li><strong>Посмотреть</strong> — весь прогресс виден в самой игре: «Инвентарь» и «Профиль» с историей операций.</li><li><strong>Удалить данные</strong> — «Настройки Android» → «Приложения» → RubUp → «Хранилище» → «Очистить данные», либо просто удалить приложение. Аккаунта и данных на наших серверах нет — удалять у нас нечего. Резервную копию Android, если она включена, можно удалить в настройках Google Диска.</li><li><strong>Удалить данные рекламы</strong> — сбросом рекламного идентификатора в настройках Android.</li></ul>
+<h2>Изменения</h2>
+<p>Если в приложении появится что-то новое, отправляющее данные наружу, эта политика будет обновлена <strong>до</strong> выхода такой версии, а не после. Дата вступления в силу вверху документа показывает, когда её правили в последний раз.</p>
+<h2>Контакты</h2>
+<p>Вопросы о конфиденциальности: <a href="mailto:narodniy.team@gmail.com">narodniy.team@gmail.com</a></p>
+<h2>English version</h2>
+<h3>RubUp Privacy Policy</h3>
+<p><strong>Effective date: October 26, 2026.</strong> App: RubUp, a case opening simulator for Android (package <code>com.stardrop.cases</code>; called StarDrop until October 26, 2026). Developer: Narodniy Team, <a href="mailto:narodniy.team@gmail.com">narodniy.team@gmail.com</a>.</p>
+<p>RubUp has no accounts, no sign-in and no server of its own. All game progress is stored only on your device. Data leaves the device in one case only: when an ad network shows an ad.</p>
+<h3>In short</h3>
+<p>Everything in the game — stars, gifts, balance, inventory, history — is fictional and has no value outside the app. No real money is accepted, paid out or won. In-game stars and gifts cannot be bought for money, sold, withdrawn or exchanged for anything outside the game. There are no in-app purchases.</p>
+<h3>Data stored on the device</h3>
+<p>Star balance, gift inventory and best drop; game statistics, achievements, level, daily quests and login streak; recent operations history; settings (language, sound, vibration, inventory sorting); timers of the free case, surprise case, Star Hour and fortune wheel, and a clock-rollback mark; service counters (number of launches, used to pace interstitial ads; luck charge of cases and modes; last seen game version). This data never leaves the device and is deleted when you uninstall the app or clear its data. If Android backup is enabled in your Google account, the system may keep a copy of app data in your Google Drive; that copy is created and stored by Google, the developer has no access to it.</p>
+<h3>Ads</h3>
+<p>The app shows a rewarded video before the free case and the surprise case, only when you tap "Open" yourself, and an interstitial ad at most twice per launch, in a pause between case openings and upgrade spins.</p>
+<p>Ads are served by Yandex Advertising Network with mediation: an ad may come from Yandex or from its partners — Google AdMob, AppLovin, Unity Ads, ironSource (LevelPlay), Mintegral, Pangle, Liftoff (Vungle), InMobi, VK Ads (myTarget, with the MyTracker measurement service), Chartboost, Digital Turbine, Bigo Ads, Start.io, zMaticoo. To show ads, these SDKs collect data on their own, including the device advertising ID (Google Advertising ID) and other app and device identifiers (such as App Set ID), technical information about the device and app, ad impressions and clicks, the IP address and the approximate region derived from it. The purposes are ad delivery, measurement and fraud prevention. The app does not request precise location.</p>
+<p>Each network processes this data as an independent controller under its own policy: Yandex <a href="https://yandex.ru/legal/confidential/">https://yandex.ru/legal/confidential/</a>, Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; other partners publish their policies on their websites. The developer has no access to this data. Game progress is not shared with ad networks. You can reset your advertising ID or opt out of ad personalization in Android settings: "Google" → "Ads".</p>
+<h3>Gifts, updates, permissions</h3>
+<p>Gift names, images and animations are built into the app; it does not go online for them during play. Gift data comes from the open @GiftChanges directory (api.changes.tg). Update availability is checked by the Google Play app under Google's rules. The app itself requests only Internet (for ads) and Network state; ad SDKs add their own (advertising ID, ad services, install source, Wi-Fi and basic phone state — network type, not your number or calls — Play licensing, vibration, background tasks). The app does not request camera, microphone, contacts, location, file access or your phone number. The game itself works offline.</p>
+<h3>Age and your rights</h3>
+<p>The app is intended for users <strong>18 and older</strong>: it contains simulated gambling for in-game currency (cases, upgrade, rocket, plinko and coin flip with random outcomes). It is not intended for children and does not take part in the Google Play Families program. All your progress is visible in the game. To delete it, clear the app's data in Android settings or uninstall the app — there is no account or server data to delete on our side. Ad data is deleted by resetting your advertising ID.</p>
+<h3>Changes and contact</h3>
+<p>If the app gains anything new that sends data out, this policy will be updated before such a version is released. Privacy questions: <a href="mailto:narodniy.team@gmail.com">narodniy.team@gmail.com</a>.</p>
+<p>The app is created independently and is not affiliated with, endorsed or sponsored by Telegram. Gift names, images and animations belong to their owners and are used only to describe items inside the simulator. Stars in the game are an in-game currency not linked to any payment system.</p>
+<footer><p>Приложение создано независимо и не связано с Telegram, не одобрено и не спонсируется им. Названия, изображения и анимации подарков принадлежат их правообладателям и используются исключительно для описания предметов внутри симулятора. Звёзды в игре — игровая валюта, не связанная ни с какой платёжной системой.</p></footer>
